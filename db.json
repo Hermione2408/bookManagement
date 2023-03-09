@@ -1,0 +1,30 @@
+{
+  "books": [
+    {
+      "title": "hdsfl",
+      "id": 1
+    },
+    {
+      "title": "hakjdf",
+      "id": 2
+    },
+    {
+      "title": "harry",
+      "id": 3
+    },
+    {
+      "title": "sed",
+      "id": 4
+    },
+    {
+      "title": "Heyy",
+      "id": 5
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "first"
+    }
+  ]
+}
