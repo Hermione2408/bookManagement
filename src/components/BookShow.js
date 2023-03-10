@@ -1,19 +1,20 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
+import BookContext from "../context/books";
 import BookEdit from "./BookEdit";
-function BookShow({ book, onDelete, onEdit }) {
+
+function BookShow({ book}) {
   const [showEdit, setShowEdit] = useState(false);
+  const {deleteBookById} =useContext(BookContext);
 
   const handleDeleteClick = () => {
-    onDelete(book.Id);
+    deleteBookById(book.Id);
   };
 
   const handleEditClick = () => {
     setShowEdit(!showEdit);
   };
-  const handleSubmit = (id, newTitle) => {
+  const handleSubmit = () => {
     setShowEdit(false);
-    onEdit(id, newTitle);
-    console.log("free");
   };
 
   //so that we can change the variable over the time

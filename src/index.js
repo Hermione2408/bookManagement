@@ -2,12 +2,12 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import BookContext from "./context/books";
+import {Provider} from "./context/books";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BookContext.Provider value={5}> 
+  <Provider> 
     <App />
-  </BookContext.Provider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
